@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Producto</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div class="container form-container">
+    <header>
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1 class="logo-title">La tienda de Facundo</h1>
+    </header>
+
+    <h1>Formulario de Producto</h1>
+
+    <form id="formularioProducto">
+      <input type="hidden" id="idProducto">
+      <label for="titulo">Título:</label><br>
+      <input type="text" id="titulo" required><br>
+      <label for="precioPeso">Precio en Pesos:</label><br>
+      <input type="number" id="precioPeso" required><br>
+      <label for="precioDolar">Precio en Dólares:</label><br>
+      <input type="number" id="precioDolar" required><br>
+      <label for="fecha">Fecha:</label><br>
+      <input type="date" id="fecha" name="fecha" required><br><br>
+      <button type="submit" id="botonGuardar">Guardar Producto</button>
+    </form>
+  </div>
+
+  <footer>
+    <p><a href="https://www.instagram.com/facubinner">Instagram</a> | <a href="https://wa.me/3564604404">WhatsApp</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

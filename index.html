@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de productos</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1 class="logo-title">La tienda de Facundo</h1>
+    </header>
+
+    <h1>Productos</h1>
+    
+    <button onclick="location.href='formulario.html'">Agregar Nuevo Producto</button>
+    
+    <table id="tablaProductos">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Precio en Pesos</th>
+          <th>Precio en Dólares</th>
+          <th>Fecha</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="listaProductos">
+      </tbody>
+    </table>
+
+    <div id="contenedor-modificar">
+      <h2>Modificar Producto</h2>
+      <label for="idcod">ID:</label><br>
+      <input type="text" id="idcod" name="idcod" readonly><br>
+      <label for="tituloMod">Título:</label><br>
+      <input type="text" id="tituloMod" name="tituloMod" required><br>
+      <label for="precioPesoMod">Precio en Pesos:</label><br>
+      <input type="number" id="precioPesoMod" name="precioPesoMod" required><br>
+      <label for="precioDolarMod">Precio en Dólares:</label><br>
+      <input type="number" id="precioDolarMod" name="precioDolarMod" required><br>
+      <label for="fechaMod">Fecha:</label><br>
+      <input type="date" id="fechaMod" name="fechaMod" required><br><br>
+      <button class="guardar-cambios" onclick="modificarProducto()">Guardar Cambios</button>
+    </div>
+  </div>
+
+  <footer>
+    <p><a href="https://www.instagram.com/facubinner">Instagram</a> | <a href="https://wa.me/3564604404">WhatsApp</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
